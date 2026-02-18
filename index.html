@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. George Joseph, Ph.D. — Academic & Researcher</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Outfit:wght@300;400;500;600&family=Cormorant:ital,wght@1,700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --ink:     #16191f;
+  --deep:    #1e2430;
+  --wine:    #8b1f3f;
+  --wine-lt: #b5294f;
+  --gold:    #c9a84c;
+  --ivory:   #f8f5ef;
+  --paper:   #f2ede4;
+  --warm:    #e8e0d0;
+  --mid:     #6b6560;
+  --light:   #a09890;
+  --white:   #fdfcfa;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: var(--ivory);
+  color: var(--ink);
+  overflow-x: hidden;
+  cursor: none;
+}
+
+/* Custom cursor */
+.cursor {
+  position: fixed; width: 10px; height: 10px;
+  border-radius: 50%; background: var(--wine);
+  pointer-events: none; z-index: 99999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s, width 0.3s, height 0.3s, background 0.3s;
+  mix-blend-mode: multiply;
+}
+.cursor-ring {
+  position: fixed; width: 36px; height: 36px;
+  border-radius: 50%; border: 1px solid var(--wine);
+  pointer-events: none; z-index: 99998;
+  transform: translate(-50%, -50%);
+  transition: transform 0.15s ease-out, width 0.3s, height 0.3s, opacity 0.3s;
+  opacity: 0.5;
+}
+body:hover .cursor { opacity: 1; }
+
+/* ============ NAV ============ */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 500;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.6rem 5rem;
+  background: rgba(248, 245, 239, 0.88);
+  backdrop-filter: blur(20px) saturate(1.4);
+  border-bottom: 1px solid rgba(22,25,31,0.08);
+}
+
+.nav-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem; font-weight: 600;
+  letter-spacing: 0.04em; color: var(--ink);
+  text-decoration: none;
+}
+
+.nav-name span { color: var(--wine); font-style: italic; }
+
+nav ul {
+  list-style: none;
+  display: flex; gap: 2.75rem; align-items: center;
+}
+
+nav ul a {
+  text-decoration: none;
+  font-size: 0.78rem; font-weight: 500;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--mid);
+  transition: color 0.2s;
+  position: relative;
+}
+nav ul a::after {
+  content: ''; position: absolute; left: 0; bottom: -3px;
+  width: 0; height: 1px; background: var(--wine);
+  transition: width 0.25s;
+}
+nav ul a:hover { color: var(--wine); }
+nav ul a:hover::after { width: 100%; }
+
+.nav-contact {
+  font-size: 0.78rem !important; font-weight: 600 !important;
+  color: var(--wine) !important;
+  border: 1px solid var(--wine) !important;
+  padding: 0.5rem 1.2rem; border-radius: 2px;
+}
+.nav-contact::after { display: none !important; }
+.nav-contact:hover { background: var(--wine) !important; color: var(--white) !important; }
+
+/* ============ HERO ============ */
+#hero {
+  min-height: 100vh;
+  display: flex; align-items: center;
+  padding: 8rem 5rem 5rem;
+  background: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Ruled paper lines in background */
+#hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 47px,
+    rgba(22,25,31,0.04) 47px,
+    rgba(22,25,31,0.04) 48px
+  );
+  pointer-events: none;
+}
+
+.hero-inner {
+  max-width: 1280px; margin: 0 auto; width: 100%;
+  display: grid; grid-template-columns: 7fr 5fr;
+  gap: 4rem; align-items: center; position: relative;
+}
+
+.hero-tag {
+  display: inline-flex; align-items: center; gap: 0.6rem;
+  font-size: 0.7rem; font-weight: 600; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--wine);
+  margin-bottom: 2rem;
+}
+.hero-tag::before {
+  content: ''; display: block;
+  width: 28px; height: 1px; background: var(--wine);
+}
+
+.hero-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(3.5rem, 6.5vw, 6.2rem);
+  font-weight: 300; line-height: 1.0;
+  letter-spacing: -0.02em; color: var(--ink);
+  margin-bottom: 0.4rem;
+}
+
+.hero-title em {
+  font-style: italic; font-weight: 600;
+  color: var(--wine);
+}
+
+.hero-subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.1rem, 1.8vw, 1.45rem);
+  font-weight: 300; font-style: italic;
+  color: var(--mid); margin-bottom: 2.5rem;
+  line-height: 1.5;
+  border-left: 2px solid var(--gold);
+  padding-left: 1.25rem;
+  max-width: 580px;
+}
+
+.hero-pills {
+  display: flex; flex-wrap: wrap; gap: 0.6rem;
+  margin-bottom: 3rem;
+}
+
+.pill {
+  font-size: 0.72rem; font-weight: 500; letter-spacing: 0.04em;
+  padding: 0.4rem 1rem; border-radius: 2px;
+  border: 1px solid rgba(22,25,31,0.15);
+  color: var(--mid); background: transparent;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+.pill:hover { border-color: var(--wine); color: var(--wine); background: rgba(139,31,63,0.04); }
+
+.hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+.btn-solid {
+  background: var(--ink); color: var(--ivory);
+  padding: 0.9rem 2.2rem; border-radius: 2px;
+  font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+  display: inline-flex; align-items: center; gap: 0.6rem;
+}
+.btn-solid:hover { background: var(--wine); transform: translateY(-1px); }
+
+.btn-ghost {
+  border: 1px solid var(--ink); color: var(--ink);
+  padding: 0.9rem 2.2rem; border-radius: 2px;
+  font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+.btn-ghost:hover { background: var(--ink); color: var(--ivory); }
+
+/* Hero right – Stats panel */
+.hero-stats {
+  background: var(--paper);
+  border: 1px solid var(--warm);
+  border-radius: 4px;
+  padding: 2.5rem;
+  display: flex; flex-direction: column; gap: 0;
+}
+
+.stat-row {
+  padding: 1.4rem 0;
+  border-bottom: 1px solid var(--warm);
+  display: flex; flex-direction: column; gap: 0.25rem;
+}
+.stat-row:last-child { border-bottom: none; padding-bottom: 0; }
+.stat-row:first-child { padding-top: 0; }
+
+.stat-val {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.8rem; font-weight: 700;
+  color: var(--ink); line-height: 1;
+}
+.stat-val span { color: var(--wine); }
+
+.stat-label {
+  font-size: 0.75rem; font-weight: 500; letter-spacing: 0.05em;
+  color: var(--mid); text-transform: uppercase;
+}
+
+.stat-affil {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.9rem; font-style: italic; color: var(--light);
+  margin-top: 0.1rem;
+}
+
+/* ============ SECTION SHARED ============ */
+section { padding: 7rem 5rem; }
+
+.section-inner { max-width: 1280px; margin: 0 auto; }
+
+.sec-tag {
+  font-size: 0.68rem; font-weight: 600; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--wine);
+  display: flex; align-items: center; gap: 0.6rem;
+  margin-bottom: 1.2rem;
+}
+.sec-tag::before { content: ''; width: 24px; height: 1px; background: var(--wine); }
+
+.sec-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2rem, 3.5vw, 3.2rem);
+  font-weight: 600; line-height: 1.12;
+  letter-spacing: -0.015em; color: var(--ink);
+  margin-bottom: 3.5rem;
+}
+.sec-title em { font-style: italic; color: var(--wine); font-weight: 300; }
+
+/* ============ ABOUT / PHILOSOPHY ============ */
+#about {
+  background: var(--paper);
+  border-top: 1px solid var(--warm);
+  border-bottom: 1px solid var(--warm);
+}
+
+.about-grid {
+  display: grid; grid-template-columns: 5fr 7fr;
+  gap: 5rem; align-items: start;
+}
+
+.about-quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem; font-weight: 300; font-style: italic;
+  line-height: 1.45; color: var(--ink);
+  position: relative; padding-left: 1.75rem;
+}
+.about-quote::before {
+  content: '"';
+  position: absolute; left: -0.1rem; top: -0.5rem;
+  font-size: 5rem; color: var(--wine); opacity: 0.18;
+  font-family: 'Cormorant Garamond', serif; line-height: 1;
+}
+.about-quote .quote-attr {
+  display: block; font-size: 0.8rem; font-weight: 600;
+  font-style: normal; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--wine); margin-top: 1.2rem;
+}
+
+.about-bio {
+  font-size: 1rem; font-weight: 300; color: var(--mid);
+  line-height: 1.85; margin-bottom: 2rem;
+}
+
+.about-interests {
+  display: flex; flex-direction: column; gap: 0;
+}
+
+.interest-row {
+  display: flex; align-items: baseline; gap: 1rem;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--warm);
+  font-size: 0.875rem; color: var(--mid);
+  transition: color 0.2s;
+}
+.interest-row:hover { color: var(--ink); }
+.interest-row:last-child { border-bottom: none; }
+
+.interest-cat {
+  font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--wine);
+  min-width: 90px; flex-shrink: 0;
+}
+
+/* ============ EXPERIENCE ============ */
+#experience { background: var(--white); }
+
+.timeline {
+  position: relative;
+  display: flex; flex-direction: column; gap: 0;
+  padding-left: 2.5rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute; left: 0; top: 12px; bottom: 12px;
+  width: 1px; background: linear-gradient(to bottom, var(--wine), var(--warm));
+}
+
+.timeline-item {
+  position: relative; padding: 0 0 3rem 2rem;
+  transition: opacity 0.2s;
+}
+.timeline-item:last-child { padding-bottom: 0; }
+
+.timeline-dot {
+  position: absolute; left: -2.5rem; top: 4px;
+  width: 11px; height: 11px;
+  border-radius: 50%; background: var(--white);
+  border: 2px solid var(--wine);
+  transform: translateX(calc(50% - 0.5px));
+  transition: background 0.2s;
+}
+.timeline-item:hover .timeline-dot { background: var(--wine); }
+
+.timeline-period {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.82rem; font-style: italic; color: var(--gold);
+  font-weight: 600; margin-bottom: 0.35rem; letter-spacing: 0.03em;
+}
+
+.timeline-role {
+  font-size: 1.05rem; font-weight: 600; color: var(--ink);
+  margin-bottom: 0.25rem; line-height: 1.3;
+}
+
+.timeline-org {
+  font-size: 0.88rem; color: var(--mid); font-weight: 300;
+  display: flex; align-items: center; gap: 0.5rem;
+}
+
+.org-badge {
+  font-size: 0.62rem; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--wine);
+  border: 1px solid rgba(139,31,63,0.25); padding: 0.2rem 0.5rem;
+  border-radius: 2px; background: rgba(139,31,63,0.04);
+}
+
+/* ============ PUBLICATIONS ============ */
+#publications { background: var(--paper); }
+
+.pub-layout {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;
+}
+
+.pub-group-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem; font-weight: 600; font-style: italic;
+  color: var(--wine); margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--warm);
+}
+
+.pub-list { display: flex; flex-direction: column; gap: 1.25rem; }
+
+.pub-item {
+  padding: 1.5rem;
+  background: var(--white);
+  border: 1px solid var(--warm);
+  border-left: 3px solid transparent;
+  border-radius: 2px;
+  transition: border-left-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+.pub-item:hover {
+  border-left-color: var(--wine);
+  transform: translateX(4px);
+  box-shadow: 0 4px 20px rgba(22,25,31,0.06);
+}
+
+.pub-title {
+  font-size: 0.9rem; font-weight: 500; color: var(--ink);
+  line-height: 1.55; margin-bottom: 0.5rem;
+}
+
+.pub-authors {
+  font-size: 0.77rem; color: var(--light); font-weight: 300;
+  margin-bottom: 0.35rem;
+}
+
+.pub-journal {
+  font-size: 0.72rem; font-weight: 600; letter-spacing: 0.04em;
+  color: var(--wine); text-transform: uppercase;
+}
+
+.pub-badges { display: flex; gap: 0.4rem; margin-top: 0.6rem; flex-wrap: wrap; }
+
+.pub-badge {
+  font-size: 0.62rem; font-weight: 700; letter-spacing: 0.06em;
+  padding: 0.2rem 0.55rem; border-radius: 2px;
+  text-transform: uppercase;
+}
+.badge-q1 { background: rgba(201,168,76,0.12); color: var(--gold); border: 1px solid rgba(201,168,76,0.3); }
+.badge-q2 { background: rgba(139,31,63,0.07); color: var(--wine); border: 1px solid rgba(139,31,63,0.2); }
+.badge-award { background: rgba(22,25,31,0.06); color: var(--ink); border: 1px solid rgba(22,25,31,0.15); }
+.badge-scopus { background: rgba(44,62,190,0.07); color: #2c3ebe; border: 1px solid rgba(44,62,190,0.2); }
+
+/* ============ CASE STUDIES ============ */
+#cases { background: var(--white); }
+
+.cases-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.case-card {
+  padding: 1.75rem 1.5rem;
+  border: 1px solid var(--warm);
+  border-radius: 3px;
+  background: var(--paper);
+  position: relative;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+  overflow: hidden;
+}
+.case-card::before {
+  content: attr(data-year);
+  position: absolute; top: 1.2rem; right: 1.2rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.78rem; font-style: italic; color: var(--light);
+}
+.case-card::after {
+  content: '';
+  position: absolute; bottom: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--wine), var(--gold));
+  transform: scaleX(0); transform-origin: left;
+  transition: transform 0.35s;
+}
+.case-card:hover { border-color: rgba(139,31,63,0.2); box-shadow: 0 8px 32px rgba(22,25,31,0.06); transform: translateY(-3px); }
+.case-card:hover::after { transform: scaleX(1); }
+
+.case-publisher {
+  font-size: 0.62rem; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--wine); margin-bottom: 0.75rem;
+}
+
+.case-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.0rem; font-weight: 600; line-height: 1.4;
+  color: var(--ink);
+}
+
+.case-topic {
+  font-size: 0.72rem; font-weight: 500; color: var(--mid);
+  margin-top: 0.75rem; letter-spacing: 0.02em;
+}
+
+/* ============ AWARDS ============ */
+#awards {
+  background: var(--ink);
+  color: var(--ivory);
+}
+
+#awards .sec-title { color: var(--ivory); }
+#awards .sec-tag { color: var(--gold); }
+#awards .sec-tag::before { background: var(--gold); }
+
+.awards-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.award-card {
+  padding: 2.25rem 2rem;
+  border: 1px solid rgba(248,245,239,0.08);
+  border-radius: 3px;
+  background: rgba(248,245,239,0.03);
+  transition: background 0.2s, border-color 0.2s;
+  position: relative; overflow: hidden;
+}
+.award-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; bottom: 0;
+  width: 3px; background: var(--gold);
+  transform: scaleY(0); transform-origin: top;
+  transition: transform 0.3s;
+}
+.award-card:hover { background: rgba(248,245,239,0.06); border-color: rgba(248,245,239,0.15); }
+.award-card:hover::before { transform: scaleY(1); }
+
+.award-icon { font-size: 1.5rem; margin-bottom: 1rem; }
+
+.award-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem; font-weight: 600; font-style: italic;
+  color: var(--gold); margin-bottom: 0.5rem; line-height: 1.3;
+}
+
+.award-body {
+  font-size: 0.8rem; font-weight: 500; letter-spacing: 0.04em;
+  color: rgba(248,245,239,0.5); text-transform: uppercase; margin-bottom: 0.6rem;
+}
+
+.award-desc {
+  font-size: 0.85rem; color: rgba(248,245,239,0.6);
+  line-height: 1.65;
+}
+
+/* ============ EDUCATION ============ */
+#education { background: var(--paper); }
+
+.edu-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.edu-card {
+  padding: 2rem 1.75rem;
+  border: 1px solid var(--warm);
+  background: var(--white);
+  border-radius: 3px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.edu-card:hover { border-color: rgba(139,31,63,0.25); box-shadow: 0 6px 24px rgba(22,25,31,0.06); }
+
+.edu-degree {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.75rem; font-weight: 700; font-style: italic;
+  color: var(--wine); line-height: 1; margin-bottom: 0.75rem;
+}
+
+.edu-field {
+  font-size: 0.9rem; font-weight: 500; color: var(--ink);
+  line-height: 1.4; margin-bottom: 0.5rem;
+}
+
+.edu-inst {
+  font-size: 0.78rem; color: var(--mid); font-weight: 300;
+}
+
+/* ============ CONTACT ============ */
+#contact {
+  background: var(--white);
+  border-top: 1px solid var(--warm);
+}
+
+.contact-layout {
+  display: grid; grid-template-columns: 5fr 7fr;
+  gap: 5rem; align-items: start;
+}
+
+.contact-intro {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.6rem; font-weight: 300; font-style: italic;
+  line-height: 1.5; color: var(--ink); margin-bottom: 1.5rem;
+}
+
+.contact-note {
+  font-size: 0.88rem; font-weight: 300; color: var(--mid);
+  line-height: 1.75;
+}
+
+.contact-details { display: flex; flex-direction: column; gap: 1rem; }
+
+.contact-row {
+  display: flex; align-items: center; gap: 1.25rem;
+  padding: 1.4rem 1.6rem;
+  border: 1px solid var(--warm);
+  border-radius: 3px;
+  text-decoration: none;
+  transition: border-color 0.2s, background 0.2s;
+}
+.contact-row:hover { border-color: rgba(139,31,63,0.25); background: rgba(139,31,63,0.02); }
+
+.c-icon {
+  width: 40px; height: 40px; border-radius: 50%;
+  background: rgba(139,31,63,0.07);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1rem; flex-shrink: 0;
+}
+
+.c-label {
+  font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--wine); margin-bottom: 0.2rem;
+}
+
+.c-val {
+  font-size: 0.9rem; color: var(--ink); font-weight: 400;
+}
+
+/* ============ FOOTER ============ */
+footer {
+  background: var(--ink); color: rgba(248,245,239,0.35);
+  padding: 2.5rem 5rem;
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 2rem; flex-wrap: wrap;
+}
+
+.footer-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem; font-weight: 600; color: rgba(248,245,239,0.7);
+  letter-spacing: 0.04em;
+}
+
+footer p { font-size: 0.72rem; letter-spacing: 0.04em; }
+
+/* ============ REVEAL ============ */
+.reveal {
+  opacity: 0; transform: translateY(28px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.vis { opacity: 1; transform: none; }
+.rd1 { transition-delay: 0.08s; }
+.rd2 { transition-delay: 0.16s; }
+.rd3 { transition-delay: 0.24s; }
+.rd4 { transition-delay: 0.32s; }
+.rd5 { transition-delay: 0.40s; }
+.rd6 { transition-delay: 0.48s; }
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 1100px) {
+  nav { padding: 1.4rem 2.5rem; }
+  nav ul { display: none; }
+  section { padding: 5rem 2.5rem; }
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-stats { flex-direction: row; flex-wrap: wrap; gap: 1rem; }
+  .stat-row { border-bottom: none; padding: 0; flex: 1; min-width: 140px; }
+  .about-grid { grid-template-columns: 1fr; }
+  .pub-layout { grid-template-columns: 1fr; }
+  .cases-grid { grid-template-columns: 1fr 1fr; }
+  .awards-grid { grid-template-columns: 1fr; }
+  .edu-grid { grid-template-columns: 1fr; }
+  .contact-layout { grid-template-columns: 1fr; }
+  #hero { padding: 7rem 2.5rem 4rem; }
+}
+
+@media (max-width: 640px) {
+  section { padding: 4rem 1.5rem; }
+  nav { padding: 1.2rem 1.5rem; }
+  .cases-grid { grid-template-columns: 1fr; }
+  footer { padding: 2rem 1.5rem; flex-direction: column; text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-name">George <span>Joseph</span>, Ph.D.</a>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#publications">Research</a></li>
+    <li><a href="#cases">Case Studies</a></li>
+    <li><a href="#awards">Awards</a></li>
+    <li><a href="#contact" class="nav-contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-tag reveal">Faculty · Researcher · Consultant</div>
+      <h1 class="hero-title reveal rd1">
+        George<br>
+        <em>Joseph</em><br>
+        Ph.D.
+      </h1>
+      <p class="hero-subtitle reveal rd2">
+        Advancing resilience, antifragility, and innovation at the intersection of technology, entrepreneurship, and sustainability.
+      </p>
+      <div class="hero-pills reveal rd3">
+        <span class="pill">Entrepreneurship</span>
+        <span class="pill">Supply Chain</span>
+        <span class="pill">Project Management</span>
+        <span class="pill">Sustainability</span>
+        <span class="pill">Service Operations</span>
+        <span class="pill">Innovation</span>
+      </div>
+      <div class="hero-btns reveal rd4">
+        <a href="#publications" class="btn-solid">View Research →</a>
+        <a href="#contact" class="btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-right reveal rd3">
+      <div class="hero-stats">
+        <div class="stat-row">
+          <div class="stat-val">15<span>+</span></div>
+          <div class="stat-label">Years of Academic Experience</div>
+          <div class="stat-affil">Since 2009</div>
+        </div>
+        <div class="stat-row">
+          <div class="stat-val">14<span>+</span></div>
+          <div class="stat-label">SAGE Case Studies Published</div>
+          <div class="stat-affil">SAGE Business Cases, USA</div>
+        </div>
+        <div class="stat-row">
+          <div class="stat-val">100<span>+</span></div>
+          <div class="stat-label">Research Projects Guided</div>
+          <div class="stat-affil">National & International</div>
+        </div>
+        <div class="stat-row">
+          <div class="stat-val">4</div>
+          <div class="stat-label">Books Edited / Co-authored</div>
+          <div class="stat-affil">Excel, Mahi, Bharathi, Eliva Press</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="reveal">
+        <div class="sec-tag">Philosophy</div>
+        <div class="about-quote">
+          Resilience and antifragility aren't just research interests — they're the lens through which I understand organizations, markets, and people.
+          <span class="quote-attr">— George Joseph, Ph.D.</span>
+        </div>
+      </div>
+      <div class="reveal rd2">
+        <p class="about-bio">
+          Dr. George Joseph is an Assistant Professor at <strong>Rajagiri Business School (AACSB Accredited)</strong>, Kochi, India, where he leads the Incubation Centre and the Institutional Innovation Council. He holds a Ph.D. in Operational Flexibility from CUSAT, an MBA, and a B.Tech in Engineering.
+        </p>
+        <p class="about-bio">
+          His work spans academic publishing, industry consulting, curriculum design, and international research collaboration — including a Visiting Research Scholar appointment at <strong>WFI Ingolstadt School of Management, Katholische Universität Eichstätt-Ingolstadt, Germany</strong> supported by a Bayerische Forschungsallianz grant.
+        </p>
+        <div class="about-interests">
+          <div class="interest-row">
+            <span class="interest-cat">Teaching</span>
+            <span>Entrepreneurship, Project Management, Operations Management, Service Operations, Sustainable Development, Supply Chain Management</span>
+          </div>
+          <div class="interest-row">
+            <span class="interest-cat">Research</span>
+            <span>Innovation & Entrepreneurship, Healthcare, Supply Chain Resilience, Sustainability, Services</span>
+          </div>
+          <div class="interest-row">
+            <span class="interest-cat">Languages</span>
+            <span>English, Hindi, Malayalam, French</span>
+          </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="sec-tag">Career</div>
+      <h2 class="sec-title">Academic & Industry <em>Experience</em></h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item reveal rd1">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">Jan 2022 — Present</div>
+        <div class="timeline-role">Assistant Professor</div>
+        <div class="timeline-org">Rajagiri Business School, Kerala, India <span class="org-badge">AACSB</span></div>
+      </div>
+      <div class="timeline-item reveal rd1">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">March 2021 — Present</div>
+        <div class="timeline-role">Empaneled Expert</div>
+        <div class="timeline-org">Madiba Consult GmbH, Bonn, Germany</div>
+      </div>
+      <div class="timeline-item reveal rd2">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">Jan 2021 — March 2022</div>
+        <div class="timeline-role">President, Asia Division</div>
+        <div class="timeline-org">Polestar Experiential Learning</div>
+      </div>
+      <div class="timeline-item reveal rd2">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">Feb 2016 — Feb 2021</div>
+        <div class="timeline-role">Assistant Professor</div>
+        <div class="timeline-org">DDUKK, Cochin University of Science and Technology, India</div>
+      </div>
+      <div class="timeline-item reveal rd3">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">April 2016 — Feb 2021</div>
+        <div class="timeline-role">Online Faculty & MRP Supervisor</div>
+        <div class="timeline-org">Laureate, University of Roehampton Online, UK <span class="org-badge">Certified</span></div>
+      </div>
+      <div class="timeline-item reveal rd3">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">Aug 2013 — Feb 2016</div>
+        <div class="timeline-role">Assistant Professor, SME</div>
+        <div class="timeline-org">Kerala University of Fisheries and Ocean Studies, India</div>
+      </div>
+      <div class="timeline-item reveal rd4">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">May 2009 — Feb 2011</div>
+        <div class="timeline-role">Planning Manager</div>
+        <div class="timeline-org">Kent Constructions Pvt. Ltd., India</div>
+      </div>
+      <div class="timeline-item reveal rd4">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">Oct 2005 — Nov 2006</div>
+        <div class="timeline-role">Planning Engineer</div>
+        <div class="timeline-org">Robodh Contracting LLC, UAE</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="sec-tag">Research Output</div>
+      <h2 class="sec-title">Journal Articles <em>& Book Chapters</em></h2>
+    </div>
+    <div class="pub-layout">
+      <div>
+        <div class="pub-group-title reveal">Refereed Journal Articles</div>
+        <div class="pub-list">
+          <div class="pub-item reveal rd1">
+            <div class="pub-title">Embracing Resilience in Pharmaceutical Manufacturing: 'Digital Twins' — Forging a Resilient Path in the VUCA Maze</div>
+            <div class="pub-authors">Avinash, B. & Joseph, G. (2024)</div>
+            <div class="pub-journal">International Journal of Pharmaceutical and Healthcare Marketing</div>
+          </div>
+          <div class="pub-item reveal rd2">
+            <div class="pub-title">Reimagining Healthcare Supply Chains: A Systematic Review on Digital Transformation with Specific Focus on Efficiency, Transparency, and Responsiveness</div>
+            <div class="pub-authors">Avinash, B. & Joseph, G. (2024)</div>
+            <div class="pub-journal">Journal of Health Organization and Management</div>
+            <div class="pub-badges"><span class="pub-badge badge-q2">Q2 B</span></div>
+          </div>
+          <div class="pub-item reveal rd3">
+            <div class="pub-title">Entrepreneurial Cognition and Premature Scaling of Startups: A Qualitative Analysis of Determinants of Start-Up Failures</div>
+            <div class="pub-authors">Joseph, G., Aboobaker, Nimitha, K. A. Zakkariya (2022)</div>
+            <div class="pub-journal">Journal of Entrepreneurship in Emerging Economies</div>
+            <div class="pub-badges">
+              <span class="pub-badge badge-q1">Q1 Scopus</span>
+              <span class="pub-badge badge-award">🏆 Emerald Literati Award</span>
+            </div>
+          </div>
+          <div class="pub-item reveal rd4">
+            <div class="pub-title">Entrepreneurial Intention of Indian Women University Students: The Role of Entrepreneurial Self-Assessment and Entrepreneurial Passion</div>
+            <div class="pub-authors">Baby, N., Joseph, G., P Mohandas, Nimmi (2022)</div>
+            <div class="pub-journal">Journal of Women's Entrepreneurship and Education (JWEE)</div>
+            <div class="pub-badges"><span class="pub-badge badge-q2">Q3</span></div>
+          </div>
+          <div class="pub-item reveal rd5">
+            <div class="pub-title">Organizational Strategies for Competitive Advantage in the Construction Industry: Chinese Dominance in Southern Africa</div>
+            <div class="pub-authors">Joseph, G., Daniel Soares (2020)</div>
+            <div class="pub-journal">Journal of Construction in Developing Countries</div>
+            <div class="pub-badges"><span class="pub-badge badge-scopus">Scopus Q2</span></div>
+          </div>
+          <div class="pub-item reveal rd5">
+            <div class="pub-title">Is it all about Perception? A Sustainability Viewpoint on Psychological Capital and Life Wellbeing of Management Graduates</div>
+            <div class="pub-authors">P Mohandas, Nimmi; Joseph, G; Donald, E., William (2021)</div>
+            <div class="pub-journal">Higher Education, Skills and Work-Based Learning</div>
+            <div class="pub-badges"><span class="pub-badge badge-scopus">Scopus ABDC C</span></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="pub-group-title reveal">Book Chapters</div>
+        <div class="pub-list">
+          <div class="pub-item reveal rd1">
+            <div class="pub-title">Assessing the Sustainability and Resilience of Urban Transit: The Case of Kochi Water Metro</div>
+            <div class="pub-authors">Joseph, G.</div>
+            <div class="pub-journal">Advances in Environmental Accounting and Management</div>
+            <div class="pub-badges"><span class="pub-badge badge-q2">ABDC B</span></div>
+          </div>
+          <div class="pub-item reveal rd2">
+            <div class="pub-title">Analyzing Airbnb Customer Experience Feedback Using Text Mining</div>
+            <div class="pub-authors">Joseph, G. & Vinu Varghese</div>
+            <div class="pub-journal">Big Data and Innovation in Tourism, Travel, and Hospitality — Springer Nature</div>
+          </div>
+          <div class="pub-item reveal rd3">
+            <div class="pub-title">Transformative Power of Mobile Phones in the Indian Agro-Supply Chain</div>
+            <div class="pub-authors">Joseph, G. & K. A. Zakkariya</div>
+            <div class="pub-journal">Digital Media and Wireless Communications in Developing Nations: Agriculture, Education, and the Economic Sector</div>
+          </div>
+          <div class="pub-item reveal rd4">
+            <div class="pub-title">Assessing Learning Practices, Maturity and Skill Gap in Indian Construction Industry</div>
+            <div class="pub-authors">Joseph, G. & K. A. Zakkariya (2014)</div>
+            <div class="pub-journal">IIMK-Let's Learn — Bloomsbury</div>
+          </div>
+          <div class="pub-group-title reveal" style="margin-top:2rem;">Books Edited & Co-authored</div>
+          <div class="pub-item reveal rd5">
+            <div class="pub-title">Data Analysis for Business Decisions Using Excel</div>
+            <div class="pub-authors">Co-authored, 2019</div>
+            <div class="pub-journal">Bharathi Publications</div>
+          </div>
+          <div class="pub-item reveal rd6">
+            <div class="pub-title">Design Thinking Activities</div>
+            <div class="pub-authors">Co-authored, 2020</div>
+            <div class="pub-journal">Eliva Press</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section id="cases">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="sec-tag">SAGE Business Cases, USA</div>
+      <h2 class="sec-title">Published <em>Case Studies</em></h2>
+    </div>
+    <div class="cases-grid">
+      <div class="case-card reveal rd1" data-year="2025">
+        <div class="case-publisher">SAGE Business Cases</div>
+        <div class="case-title">Finnair: A Case Study on Resilience and Adaptation</div>
+        <div class="case-topic">Supply Chain Resilience · Aviation</div>
+      </div>
+      <div class="case-card reveal rd2" data-year="2025">
+        <div class="case-publisher">SAGE Business Cases</div>
+        <div class="case-title">Behind the Shelves: The Carrefour–PepsiCo Pricing Clash</div>
+        <div class="case-topic">Retail Strategy · Negotiation</div>
+      </div>
+      <div class="case-card reveal rd3" data-year="2025">
+        <div class="case-publisher">SAGE Business Cases</div>
+        <div class="case-title">Transparency, Ethics, and Scaling in the Cultivated Meat Industry</div>
+        <div class="case-topic">Ethics · Sustainability · Foodtech</div>
+      </div>
+      <div class="case-card reveal rd1" data-year="2025">
+        <div class="case-publisher">SAGE Business Cases</div>
+        <div class="case-title">The Houseboat Industry: Resilience Amidst Market Consolidation and Sustainability</div>
+        <div class="case-topic">Tourism · Resilience</div>
+      </div>
+      <div class="case-card reveal rd2" data-year="2024">
+        <div class="case-publisher">SAGE Business Cases</div>
+        <div class="case-title">Redefining HR Dynamics: Balancing Challenges and Opportunities with AI in Hiring, Firing, and Reskilling</div>
+        <div class="case-topic">HR · AI · Future of Work <br><strong style="color:var(--wine)">🏆 Editors' Choice Award</strong></div>
+      </div>
+      <div class="case-card reveal rd3" data-year="2024">
+        <div class="case-publisher">SAGE Business Cases</div>
+        <div class="case-title">Sustainability in the Semiconductor Industry: A New Entrant's Dilemma</div>
+        <div class="case-topic">Semiconductors · Sustainability Strategy</div>
+      </div>
+      <div class="case-card reveal rd1" data-year="2024">
+        <div class="case-publisher">SAGE Business Cases</div>
+        <div class="case-title">OTT Platforms and the Movie Industry: Evolving Business Models</div>
+        <div class="case-topic">Media · Digital Transformation</div>
+      </div>
+      <div class="case-card reveal rd2" data-year="2024">
+        <div class="case-publisher">SAGE Business Cases</div>
+        <div class="case-title">Flexibility is Key for Auto Component Companies in the EV Revolution</div>
+        <div class="case-topic">Automotive · Operations · EV Transition</div>
+      </div>
+      <div class="case-card reveal rd3" data-year="2024">
+        <div class="case-publisher">SAGE Business Cases</div>
+        <div class="case-title">Repairing is Easier Said than Done: Apple's Self-Service Repair Program</div>
+        <div class="case-topic">Tech Strategy · Right-to-Repair</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AWARDS -->
+<section id="awards">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="sec-tag">Recognition</div>
+      <h2 class="sec-title">Awards & <em>Achievements</em></h2>
+    </div>
+    <div class="awards-grid">
+      <div class="award-card reveal rd1">
+        <div class="award-icon">🏆</div>
+        <div class="award-name">Outstanding Paper Award — Emerald Literati Awards 2024</div>
+        <div class="award-body">Emerald Publishing</div>
+        <div class="award-desc">Awarded for "Entrepreneurial Cognition and Premature Scaling of Startups: A Qualitative Analysis of Determinants of Start-Up Failures" — Journal of Entrepreneurship in Emerging Economies.</div>
+      </div>
+      <div class="award-card reveal rd2">
+        <div class="award-icon">🎖️</div>
+        <div class="award-name">Editors' Choice Award — SAGE Business Cases</div>
+        <div class="award-body">SAGE Publications, USA</div>
+        <div class="award-desc">Awarded for "Redefining HR Dynamics: Balancing Challenges and Opportunities with AI in Hiring, Firing, and Reskilling Workforce."</div>
+      </div>
+      <div class="award-card reveal rd3">
+        <div class="award-icon">🌍</div>
+        <div class="award-name">Visiting Research Scholar — Germany</div>
+        <div class="award-body">WFI Ingolstadt, KU Eichstätt-Ingolstadt</div>
+        <div class="award-desc">Invited to collaborate on "Artist and Artisan Entrepreneurship in Germany and India," supported by Bayerische Forschungsallianz grant. September–October 2024.</div>
+      </div>
+      <div class="award-card reveal rd4">
+        <div class="award-icon">🌐</div>
+        <div class="award-name">EESC Civil Solidarity Prize 2020</div>
+        <div class="award-body">European Union — via Alison</div>
+        <div class="award-desc">Volunteered 10 weeks to create a free certifiable course "Coronavirus: What You Need to Know," translated into 70 world languages. Recognized by the European Union.</div>
+      </div>
+      <div class="award-card reveal rd5">
+        <div class="award-icon">🎓</div>
+        <div class="award-name">Young Researcher Award — IRSSM 4 (2013)</div>
+        <div class="award-body">Service Research Institute, USA</div>
+        <div class="award-desc">Recognized for outstanding early-career research contributions in service management and innovation.</div>
+      </div>
+      <div class="award-card reveal rd6">
+        <div class="award-icon">📋</div>
+        <div class="award-name">Best Technical Paper Award — PMI Kerala Chapter</div>
+        <div class="award-body">Project Management Institute, Waves 2013 & 2015</div>
+        <div class="award-desc">Won the Best Technical Paper Award at "Waves" conference twice — in 2013 and 2015 respectively for project management research.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="sec-tag">Qualifications</div>
+      <h2 class="sec-title">Education & <em>Credentials</em></h2>
+    </div>
+    <div class="edu-grid">
+      <div class="edu-card reveal rd1">
+        <div class="edu-degree">Ph.D.</div>
+        <div class="edu-field">Operational Flexibility: A Model for Effective Project Management</div>
+        <div class="edu-inst">Cochin University of Science and Technology (CUSAT), India</div>
+      </div>
+      <div class="edu-card reveal rd2">
+        <div class="edu-degree">MBA</div>
+        <div class="edu-field">School of Management Studies</div>
+        <div class="edu-inst">Cochin University of Science and Technology (CUSAT), India</div>
+      </div>
+      <div class="edu-card reveal rd3">
+        <div class="edu-degree">B.Tech</div>
+        <div class="edu-field">Engineering</div>
+        <div class="edu-inst">Government Engineering College, Trichur, Kerala, India</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="contact-layout">
+      <div class="reveal">
+        <div class="sec-tag">Connect</div>
+        <p class="contact-intro">Open to research collaborations, consulting engagements, and academic partnerships.</p>
+        <p class="contact-note">Dr. George Joseph is based at Rajagiri Business School, Kochi, Kerala. He actively engages in international research, case study authorship, and consulting across entrepreneurship, supply chain, and sustainability domains.</p>
+      </div>
+      <div class="contact-details reveal rd2">
+        <a href="mailto:georgej@rajagiri.edu" class="contact-row">
+          <div class="c-icon">✉️</div>
+          <div>
+            <div class="c-label">Email</div>
+            <div class="c-val">georgej@rajagiri.edu</div>
+          </div>
+        </a>
+        <a href="tel:+919995468697" class="contact-row">
+          <div class="c-icon">📞</div>
+          <div>
+            <div class="c-label">Phone</div>
+            <div class="c-val">+91 9995 468697</div>
+          </div>
+        </a>
+        <a href="https://www.rajagiribusinessschool.edu.in/faculty-details/george-joseph" target="_blank" class="contact-row">
+          <div class="c-icon">🏛️</div>
+          <div>
+            <div class="c-label">Institution</div>
+            <div class="c-val">Rajagiri Business School, Kochi — Kerala 682039</div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <div class="footer-name">George Joseph, Ph.D.</div>
+    <p>Assistant Professor · Rajagiri Business School · Kochi, India</p>
+  </div>
+  <p>© 2026 Dr. George Joseph. All rights reserved.</p>
+</footer>
+
+<script>
+// Custom cursor
+const cursor = document.getElementById('cursor');
+const ring = document.getElementById('cursorRing');
+let mx = 0, my = 0, rx = 0, ry = 0;
+document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+(function animate() {
+  cursor.style.left = mx + 'px'; cursor.style.top = my + 'px';
+  rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12;
+  ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
+  requestAnimationFrame(animate);
+})();
+
+document.querySelectorAll('a, button').forEach(el => {
+  el.addEventListener('mouseenter', () => {
+    cursor.style.width = '18px'; cursor.style.height = '18px';
+    ring.style.width = '52px'; ring.style.height = '52px'; ring.style.opacity = '0.25';
+  });
+  el.addEventListener('mouseleave', () => {
+    cursor.style.width = '10px'; cursor.style.height = '10px';
+    ring.style.width = '36px'; ring.style.height = '36px'; ring.style.opacity = '0.5';
+  });
+});
+
+// Scroll reveal
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('vis');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
