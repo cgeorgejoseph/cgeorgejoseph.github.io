@@ -1,0 +1,28 @@
+:root{--ink:#16191f;--wine:#8b1f3f;--gold:#c9a84c;--ivory:#f8f5ef;--paper:#f2ede4;--warm:#e8e0d0;--mid:#6b6560;--white:#fdfcfa}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Outfit',sans-serif;background:var(--ivory);color:var(--ink);line-height:1.65;font-weight:300}
+a{color:var(--wine)}
+header.top{padding:1.4rem 1.5rem;border-bottom:1px solid var(--warm);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;max-width:52rem;margin:0 auto}
+header.top a{text-decoration:none;font-size:.9rem}
+.name{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;color:var(--ink)}
+main{max-width:52rem;margin:0 auto;padding:3rem 1.5rem 4rem}
+.theme{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--wine);font-weight:500}
+h1{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:clamp(1.9rem,4.5vw,2.8rem);line-height:1.15;margin:.6rem 0 1.2rem;text-wrap:balance}
+.paper-title{font-size:1.05rem;color:var(--mid);margin-bottom:.4rem}
+.byline{font-size:.95rem;color:var(--mid)}
+.award{display:inline-block;margin-top:1rem;padding:.3rem .8rem;border:1px solid var(--gold);font-size:.8rem;color:var(--ink);background:var(--white)}
+section{margin-top:2.4rem}
+h2{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:1.45rem;margin-bottom:.5rem}
+p{max-width:65ch}
+.cite{background:var(--paper);border-left:3px solid var(--wine);padding:1rem 1.2rem;font-size:.95rem}
+.actions{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1rem}
+.btn{display:inline-block;padding:.65rem 1.2rem;background:var(--wine);color:var(--white);text-decoration:none;font-size:.9rem;font-weight:400}
+.btn.alt{background:transparent;color:var(--wine);border:1px solid var(--wine)}
+.btn:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+ul.kw{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.6rem}
+ul.kw li{font-size:.8rem;padding:.2rem .6rem;background:var(--warm)}
+.list a.item{display:block;text-decoration:none;color:var(--ink);padding:1.1rem 0;border-bottom:1px solid var(--warm)}
+.list a.item strong{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;display:block}
+.list a.item span{font-size:.9rem;color:var(--mid)}
+.list a.item:hover strong{color:var(--wine)}
+footer{max-width:52rem;margin:0 auto;padding:1.5rem;border-top:1px solid var(--warm);font-size:.85rem;color:var(--mid)}

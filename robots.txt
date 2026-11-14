@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cgeorgejoseph.github.io/sitemap.xml
