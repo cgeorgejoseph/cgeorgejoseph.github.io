@@ -1,0 +1,219 @@
+{
+  "source": "Google Scholar",
+  "profile_url": "https://scholar.google.com/citations?user=mU9Ix8IAAAAJ&hl=en",
+  "updated": "2026-11-17",
+  "totals": {
+    "citations": {
+      "all": 429,
+      "since_2021": 388
+    },
+    "h_index": {
+      "all": 9,
+      "since_2021": 9
+    },
+    "i10_index": {
+      "all": 9,
+      "since_2021": 9
+    },
+    "works_indexed": 33
+  },
+  "per_year": [
+    {
+      "year": 2017,
+      "citations": 4
+    },
+    {
+      "year": 2018,
+      "citations": 6
+    },
+    {
+      "year": 2019,
+      "citations": 10
+    },
+    {
+      "year": 2020,
+      "citations": 17
+    },
+    {
+      "year": 2021,
+      "citations": 14
+    },
+    {
+      "year": 2022,
+      "citations": 23
+    },
+    {
+      "year": 2023,
+      "citations": 54
+    },
+    {
+      "year": 2024,
+      "citations": 77
+    },
+    {
+      "year": 2025,
+      "citations": 115
+    },
+    {
+      "year": 2026,
+      "citations": 100,
+      "partial": true
+    }
+  ],
+  "works": [
+    {
+      "title": "Entrepreneurial cognition and premature scaling of startups: a qualitative analysis of determinants of start-up failures",
+      "authors": "Joseph, G., Aboobaker, N., & Zakkariya, K. A.",
+      "venue": "Journal of Entrepreneurship in Emerging Economies",
+      "year": 2023,
+      "citations": 105,
+      "page": "/papers/premature-scaling-startups/",
+      "scholar": "mU9Ix8IAAAAJ:9yKSN-GCB0IC"
+    },
+    {
+      "title": "Is it all about perception? A sustainability viewpoint on psychological capital and life well-being of management graduates",
+      "authors": "Nimmi, P. M., Joseph, G., & Donald, W. E.",
+      "venue": "Higher Education, Skills and Work-Based Learning",
+      "year": 2022,
+      "citations": 68,
+      "page": "/papers/psychological-capital-wellbeing-management-graduates/",
+      "scholar": "mU9Ix8IAAAAJ:u5HHmVD_uO8C"
+    },
+    {
+      "title": "Reimagining healthcare supply chains: a systematic review on digital transformation with specific focus on efficiency, transparency and responsiveness",
+      "authors": "Avinash, B., & Joseph, G.",
+      "venue": "Journal of Health Organization and Management",
+      "year": 2024,
+      "citations": 64,
+      "page": "/papers/healthcare-supply-chain-digital-transformation/",
+      "scholar": "mU9Ix8IAAAAJ:Wp0gIr-vW9MC"
+    },
+    {
+      "title": "Analyzing Airbnb customer experience feedback using text mining",
+      "authors": "Joseph, G., & Varghese, V.",
+      "venue": "Big Data and Innovation in Tourism, Travel, and Hospitality (book chapter)",
+      "year": 2019,
+      "citations": 42,
+      "page": "/papers/airbnb-customer-experience-text-mining/",
+      "scholar": "mU9Ix8IAAAAJ:d1gkVwhDpl0C"
+    },
+    {
+      "title": "Scope of social work profession in industrial establishment",
+      "authors": "Cheeran, M. T., Joseph, G., & Renjith, T. A.",
+      "venue": "International Journal of Advanced Research in Management and Social Sciences",
+      "year": 2015,
+      "citations": 33,
+      "page": null,
+      "scholar": "mU9Ix8IAAAAJ:Se3iqnhoufwC"
+    },
+    {
+      "title": "Embracing resilience in pharmaceutical manufacturing: “digital twins”, forging a resilient path in the VUCA maze",
+      "authors": "Avinash, B., & Joseph, G.",
+      "venue": "International Journal of Pharmaceutical and Healthcare Marketing",
+      "year": 2025,
+      "citations": 24,
+      "page": "/papers/digital-twins-pharmaceutical-manufacturing-resilience/",
+      "scholar": "mU9Ix8IAAAAJ:mVmsd5A6BfQC"
+    },
+    {
+      "title": "Significance of developing spirituality among management students: discerning the impact on psychological resources and wellbeing",
+      "authors": "Nimmi, P. M., Binoy, A. K., Joseph, G., & Suma, R.",
+      "venue": "Journal of Applied Research in Higher Education",
+      "year": 2022,
+      "citations": 23,
+      "page": "/papers/spirituality-wellbeing-management-students/",
+      "scholar": "mU9Ix8IAAAAJ:u-x6o8ySG0sC"
+    },
+    {
+      "title": "Entrepreneurial intention of Indian women university students: the role of entrepreneurial self-assessment and entrepreneurial passion",
+      "authors": "Manjaly, N. B., Joseph, G., Nimmi, P. M., & K. S., K. N.",
+      "venue": "Journal of Women's Entrepreneurship and Education",
+      "year": 2022,
+      "citations": 20,
+      "page": "/papers/entrepreneurial-intention-indian-women-students/",
+      "scholar": "mU9Ix8IAAAAJ:ufrVoPGSRksC"
+    },
+    {
+      "title": "Assessing the sustainability and resilience of urban transit: the case of Kochi water metro",
+      "authors": "Joseph, G., & Elias, A. A.",
+      "venue": "Advances in Environmental Accounting & Management",
+      "year": 2024,
+      "citations": 11,
+      "page": "/papers/kochi-water-metro-sustainability-resilience/",
+      "scholar": "mU9Ix8IAAAAJ:4DMP91E08xMC"
+    },
+    {
+      "title": "A study on the formation of candlestick patterns with reference to Nifty index for the past five years",
+      "authors": "Romeo, A., Joseph, G., & Elizabeth, D. T.",
+      "venue": "International Journal of Management Research and Reviews",
+      "year": 2015,
+      "citations": 9,
+      "page": null,
+      "scholar": "mU9Ix8IAAAAJ:IjCSPb-OGe4C"
+    },
+    {
+      "title": "A study of SIP & LIP of selected large cap stocks listed in NSE",
+      "authors": "Joseph, G., Telma, M., & Romeo, A.",
+      "venue": "International Journal of Management Research & Review",
+      "year": 2015,
+      "citations": 8,
+      "page": null,
+      "scholar": "mU9Ix8IAAAAJ:zYLM7Y9cAGgC"
+    },
+    {
+      "title": "Employee motivation and organizational culture: a study with special reference to software industry",
+      "authors": "Cheeran, M. T., Saji, K. S., & Joseph, G.",
+      "venue": "International Journal of Innovative Research & Development",
+      "year": 2015,
+      "citations": 7,
+      "page": null,
+      "scholar": "mU9Ix8IAAAAJ:hqOjcs7Dif8C"
+    },
+    {
+      "title": "Operational flexibility: a model for effective project management",
+      "authors": "Joseph, G., & Zakkariya, K. A.",
+      "venue": "Cochin University of Science and Technology",
+      "year": 2015,
+      "citations": 5,
+      "page": null,
+      "scholar": "mU9Ix8IAAAAJ:qjMakFHDy7sC"
+    },
+    {
+      "title": "Organisational strategies for competitive advantage in the construction industry: Chinese dominance in Southern Africa",
+      "authors": "Fernandes, D. S., & Joseph, G.",
+      "venue": "Journal of Construction in Developing Countries",
+      "year": 2020,
+      "citations": 4,
+      "page": "/papers/chinese-contractors-southern-africa-competitive-advantage/",
+      "scholar": "mU9Ix8IAAAAJ:2osOgNQ5qMEC"
+    },
+    {
+      "title": "OTT platforms and the movie industry: evolving business models",
+      "authors": "Joseph, G.",
+      "venue": "SAGE Business Cases",
+      "year": 2024,
+      "citations": 3,
+      "page": null,
+      "scholar": "mU9Ix8IAAAAJ:_kc_bZDykSQC"
+    },
+    {
+      "title": "Redefining HR dynamics: balancing challenges and opportunities with AI in hiring, firing, and reskilling workforce",
+      "authors": "Joseph, G.",
+      "venue": "SAGE Business Cases",
+      "year": 2024,
+      "citations": 2,
+      "page": null,
+      "scholar": "mU9Ix8IAAAAJ:M3ejUd6NZC8C"
+    },
+    {
+      "title": "Sustainability in the semiconductor industry: a new entrant's dilemma",
+      "authors": "Joseph, G., & Babu, D.",
+      "venue": "SAGE Business Cases",
+      "year": 2024,
+      "citations": 1,
+      "page": null,
+      "scholar": "mU9Ix8IAAAAJ:ULOm3_A8WrAC"
+    }
+  ],
+  "uncited_note": "16 more works, mostly SAGE Business Cases published in 2024 to 2026, have no citations recorded yet."
+}
