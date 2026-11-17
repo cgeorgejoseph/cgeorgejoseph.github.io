@@ -162,10 +162,10 @@ def build():
 <meta property="og:type" content="website">
 <meta property="og:url" content="{SITE}/citations/">
 <meta property="og:title" content="Research citations | George Joseph, Ph.D.">
-<meta property="og:description" content="{esc(desc)}">
+<meta property="og:description" content="Citation metrics and most-cited works of George Joseph, Ph.D., Rajagiri Business School, Kochi, from Google Scholar.">
 <meta property="og:image" content="{SITE}/citations/og.png">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="627">
-<meta property="og:image:alt" content="George Joseph, Ph.D.: {c_all} Google Scholar citations, h-index {tot['h_index']['all']}, i10-index {tot['i10_index']['all']}">
+<meta property="og:image:alt" content="George Joseph, Ph.D.: research citations, with a chart of citations per year">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">

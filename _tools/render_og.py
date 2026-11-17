@@ -49,6 +49,7 @@ h1{{font-family:C;font-weight:600;font-size:76px;line-height:1.02;margin-top:26p
 h1 em{{color:#8b1f3f}}
 .aff{{font-size:22px;color:#6b6560;margin-top:18px;border-left:3px solid #c9a84c;padding-left:16px}}
 .left{{display:flex;flex-direction:column}}
+.what{{font-family:C;font-weight:600;font-style:italic;font-size:44px;line-height:1.15;color:#16191f}}
 .stats{{display:flex;gap:52px;margin-top:auto;margin-bottom:56px}}
 .v{{font-family:C;font-weight:700;font-size:96px;line-height:.9;font-variant-numeric:lining-nums;font-feature-settings:'lnum' 1}}
 .l{{font-size:16px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#6b6560;margin-top:10px}}
@@ -64,14 +65,10 @@ h1 em{{color:#8b1f3f}}
 <div class="tag">Research citations</div>
 <h1>George <em>Joseph</em>, Ph.D.</h1>
 <div class="aff">Rajagiri Business School, Kochi</div>
-<div class="stats">
-<div><div class="v">{t['citations']['all']}</div><div class="l">Citations</div></div>
-<div><div class="v">{t['h_index']['all']}</div><div class="l">h-index</div></div>
-<div><div class="v">{t['i10_index']['all']}</div><div class="l">i10-index</div></div>
-</div></div>
+<div class="stats"><div class="what">Citation metrics<br>and most-cited works</div></div></div>
 <div class="right"><div class="ct">Citations per year</div><div class="chart">{bars}</div>
-<div class="cap"><span>{py[0]['year']}</span><span>{py[-1]['year']}</span></div></div></div>
-<div class="foot"><span>Google Scholar · {upd}</span><b>cgeorgejoseph.github.io/citations</b></div>
+</div></div>
+<div class="foot"><span>From Google Scholar</span><b>cgeorgejoseph.github.io/citations</b></div>
 </body></html>"""
     tmp = os.path.join(ROOT, "_tools", "_og.html")
     open(tmp, "w", encoding="utf-8").write(page)
